@@ -3,6 +3,8 @@ import { SendIcon } from "lucide-react";
 
 function Home(){
     const [emails, setEmails] = useState("");
+
+
     return(
         <div className="flex flex-col gap-3 mx-auto w-[70vw] h-[80vh] bg-blue-950/80 rounded-md z-20 relative">
             <div className="flex flex-row justify-center w-full gap-4 items-center pt-3">
@@ -10,8 +12,8 @@ function Home(){
                 <p className="text-2xl text-white font-bold">MAILER</p>
             </div>
 
-            <div className="flex items-center mx-auto w-[50vw] h-[65vh] border-2 border-white rounded-md">
-                <div className="flex flex-col gap-5 w-full">
+            <div className="flex flex-col gap-7 justify-center items-center mx-auto w-[50vw] h-[65vh] border-2 border-white rounded-md">
+                <form className="flex flex-col gap-5 w-full">
                     <label className="flex flex-row text-2xl justify-center items-center gap-10 mx-auto text-white font-bold ">
                         MAILS:
                         <input 
@@ -29,6 +31,10 @@ function Home(){
                             placeholder="Write message here"
                         />
                     </label>
+                </form>
+
+                <div>
+                    <button className="w-[150px] h-[35px] bg-white font-bold rounded-md" >SEND</button>
                 </div>
             </div>
         </div>
