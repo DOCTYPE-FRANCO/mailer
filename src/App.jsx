@@ -4,7 +4,7 @@ import Home from "./Home"
 function App() {
 
   return (
-    <div className="min-h-screen w-full bg-white relative text-gray-800">
+    <div className="pt-16 min-h-screen w-full bg-white relative text-gray-800">
       {/* Crosshatch Art - Light Pattern */}
       <div
         className="absolute inset-0 z-0 pointer-events-none"
