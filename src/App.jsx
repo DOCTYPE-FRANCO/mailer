@@ -20,7 +20,7 @@ function App() {
       {/* Your Content/Components */}
       <div>
         <div>
-          <a className="fixed top-3 right-1.5 bg-blue-950 text-white p-2.5 rounded-md">Contact Developer</a>
+          <a className="fixed top-3 right-1.5 bg-blue-950/80 text-white p-2.5 rounded-md">Contact Developer</a>
         </div>
         <Home />
       </div>
