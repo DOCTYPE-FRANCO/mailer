@@ -18,7 +18,12 @@ function App() {
         }}
       />
       {/* Your Content/Components */}
-      <Home />
+      <div>
+        <div>
+          <a className="fixed top-3  bg-blue-950 text-white p-2.5 rounded-md">Contact Developer</a>
+        </div>
+        <Home />
+      </div>
     </div>
   )
 }
