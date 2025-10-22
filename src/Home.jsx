@@ -25,6 +25,9 @@ function Home(){
                 body: message
             })
 
+            setEmails("");
+            setMessage("");
+
         }catch(error){
             console.log(error);
         }
