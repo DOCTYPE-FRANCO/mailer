@@ -33,15 +33,15 @@ function Home(){
 
     
     return(
-        <div className="flex flex-col gap-3 mx-auto w-[70vw] h-[80vh] bg-blue-950/80 rounded-md z-20 relative">
+        <div className="flex flex-col gap-3 mx-auto w-[400px] h-[800px] md:w-[750px] md:h-[80vh] bg-blue-950/80 rounded-md z-20 relative">
             <div className="flex flex-row justify-center w-full gap-4 items-center pt-3">
                 <SendIcon color="#FFFFFF"/>
                 <p className="text-2xl text-white font-bold">MAILER</p>
             </div>
 
-            <div className="flex flex-col gap-7 justify-center items-center mx-auto w-[50vw] h-[65vh] border-2 border-white rounded-md">
-                <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full">
-                    <label className="flex flex-row text-2xl justify-center items-center gap-10 mx-auto text-white font-bold ">
+            <div className="flex flex-col gap-7 md:justify-center md:items-center mx-auto w-[350px] md:w-[650px] h-[65vh] border-2 border-white rounded-md">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full pt-20 md:pt-0">
+                    <label className="flex flex-col md:flex-row text-2xl justify-center md:items-center gap-2 md:gap-10 mx-auto text-white font-bold ">
                         MAILS:
                         <input 
                             type="text"
@@ -52,7 +52,7 @@ function Home(){
                         />
                     </label>
 
-                    <label className="flex flex-row text-2xl justify-center items-center gap-2 mx-auto text-white font-bold ">
+                    <label className="flex flex-col md:flex-row text-2xl justify-center md:items-center gap-2 mx-auto text-white font-bold ">
                         MESSAGE:
                         <input 
                             type="text"
@@ -63,8 +63,8 @@ function Home(){
                         />
                     </label>
 
-                    <div className="flex justify-center">
-                        <button type="submit" className="w-[150px] h-[35px] bg-white font-bold rounded-md hover:scale-110 transition-all duration-500 active:bg-gray-800" >SEND</button>
+                    <div className="flex justify-center mt-10 md:mt-0">
+                        <button type="submit" className="w-[250px] h-[40px] md:w-[150px] md:h-[35px] bg-white font-bold rounded-md hover:scale-110 transition-all duration-500 active:bg-gray-800" >SEND</button>
                     </div>
                 </form>
 

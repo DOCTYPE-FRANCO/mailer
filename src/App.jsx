@@ -4,7 +4,7 @@ import Home from "./Home"
 function App() {
 
   return (
-    <div className="pt-16 min-h-screen w-full bg-white relative text-gray-800">
+    <div className="pt-24 min-h-screen w-full bg-white relative text-gray-800">
       {/* Crosshatch Art - Light Pattern */}
       <div
         className="absolute inset-0 z-0 pointer-events-none"
@@ -20,7 +20,7 @@ function App() {
       {/* Your Content/Components */}
       <div>
         <div>
-          <a className="fixed top-3 right-1.5 bg-blue-950/80 text-white p-2.5 rounded-md">Contact Developer</a>
+          <a className="fixed top-3 right-1.5 bg-blue-950/80 text-white p-4 md:p-2.5 rounded-md">Contact Developer</a>
         </div>
         <Home />
       </div>
