@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./Navbar";
 import { SendIcon } from "lucide-react";
 
 function Header(){
@@ -8,6 +9,8 @@ function Header(){
                 <SendIcon color="#FFFFFF"/>
                 <p className="text-2xl text-white font-bold">MAILER</p>
             </div>
+
+            <Navbar />
         </div>
     );
 }
