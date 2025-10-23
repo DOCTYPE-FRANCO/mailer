@@ -9,8 +9,12 @@ function Navbar(){
                     <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Home</p>
                 </Link>
 
-                <Link to="/mail">
-                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Send-Mail</p>
+                <Link to="/">
+                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Documentaion</p>
+                </Link>
+
+                <Link to="/">
+                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Contact</p>
                 </Link>
                 
             </ul>
