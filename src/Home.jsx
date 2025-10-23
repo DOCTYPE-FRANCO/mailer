@@ -9,7 +9,7 @@ function Home(){
                 <p className="md:text-6xl text-center text-blue-950 font-extrabold">Send Bulk Emails with Mailer</p>   
             </div>
 
-            <p className="text-center text-2xl text-blue-950 font-bold">Send to 100 Email Addresses in less than 5 minutes</p>
+            <p className="text-center text-2xl text-blue-950 font-semibold">Send to 100 Email Addresses in less than 5 minutes</p>
 
             <Link to="/mail">
                 <p className="bg-blue-950 text-white font-bold hover:scale-110 hover:cursor-pointer p-3 px-6 rounded-md transition-all duration-300">Get Started</p>
