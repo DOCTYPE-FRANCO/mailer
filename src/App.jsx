@@ -20,7 +20,7 @@ function App() {
       {/* Your Content/Components */}
       <div>
         <div>
-          <a className="fixed top-3 right-1.5 bg-blue-950/80 text-white p-4 md:p-2.5 rounded-md">Contact Developer</a>
+          <a href="https://wa.me/2348120362926?text=Hello%20i%20got%20your%20number%20from%20MAILER%20" className="fixed top-3 right-1.5 bg-blue-950/80 text-white p-4 md:p-2.5 rounded-md">Contact Developer</a>
         </div>
         <Home />
       </div>
