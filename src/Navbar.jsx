@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 function Navbar(){
     return(
-        <div>
-            <ul className="flex flex-row gap-3 text-white">
+        <div className="w-[70vw]">
+            <ul className="flex flex-row gap-10 text-white">
                 <Link to="/">
-                    <p>Home</p>
+                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Home</p>
                 </Link>
 
-                <Link to="/">
-                    <p>Send Mail</p>
+                <Link to="/mail">
+                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Send-Mail</p>
                 </Link>
                 
             </ul>

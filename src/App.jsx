@@ -1,5 +1,6 @@
 import React from "react"
 import Home from "./Home"
+import Mail from "./Mail"
 import Header from "./Header"
 import { Routes, Route } from "react-router-dom"
 
@@ -25,6 +26,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/mail" element={<Mail/>}/>
           </Routes>
         </div>
       </div>
