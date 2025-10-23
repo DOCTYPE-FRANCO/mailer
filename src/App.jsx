@@ -1,5 +1,7 @@
 import React from "react"
 import Home from "./Home"
+import Header from "./Header"
+import { Routes, Route } from "react-router-dom"
 
 function App() {
 
@@ -19,11 +21,14 @@ function App() {
       />
       {/* Your Content/Components */}
       <div>
+        <Header />
         <div>
-          <a href="https://wa.me/2348120362926?text=Hello%20i%20got%20your%20number%20from%20MAILER%20" className="fixed top-3 right-1.5 bg-blue-950/80 text-white p-4 md:p-2.5 rounded-md">Contact Developer</a>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+          </Routes>
         </div>
-        <Home />
       </div>
+        
     </div>
   )
 }
