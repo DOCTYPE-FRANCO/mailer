@@ -1,10 +1,17 @@
 import React, {useState} from "react";
 import { SendIcon } from "lucide-react";
+import { ScaleLoader } from "react-spinners";
+import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 
 function Home(){
     const [emails, setEmails] = useState("");
     const [message,setMessage] = useState("")
+    const [loading, setLoading] = useState(false);
+
+    function success(){
+        toast("Emails Sent Successfully");
+    }
 
     async function handleSubmit(e){
         e.preventDefault();
@@ -12,7 +19,7 @@ function Home(){
             .split(/[\s,]+/)
             .filter((email) => email.includes("@"));
         console.log(emailArray);
-
+        setLoading(true);
         if(emailArray.length === 0){
             alert("Please enter valid Emails");
             return;
@@ -24,13 +31,19 @@ function Home(){
                 subject: "Mailer Test",
                 body: message
             })
+            console.log(response.data);
 
+            if(response.data === "EMAILS SENT"){
+                success();
+            }
             setEmails("");
             setMessage("");
 
         }catch(error){
             console.log(error);
+            alert("Something Went Wrong");
         }
+        setLoading(false);
 
     }
 
@@ -69,10 +82,17 @@ function Home(){
                     <div className="flex justify-center mt-10 md:mt-0">
                         <button type="submit" className="w-[250px] h-[40px] md:w-[150px] md:h-[35px] bg-white font-bold rounded-md hover:scale-110 transition-all duration-500 active:bg-gray-800" >SEND</button>
                     </div>
-                </form>
-
-                
+                    <ToastContainer />
+                </form>    
             </div>
+            {loading && (
+                <div className="fixed inset-0 backdrop-blur-sm z-50 flex justify-center items-center">
+                    <div className="flex flex-col items-center gap-4">
+                        <ScaleLoader color="#191644" height={42} width={15}/>
+                        <p className="font-extrabold text-white">SENDING MAILS, MIGHT SOME TIME ...</p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
