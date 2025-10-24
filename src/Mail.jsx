@@ -23,7 +23,7 @@ function Mail(){
         setLoading(true);
         if(emailArray.length === 0){
             alert("Please enter valid Emails");
-            return;
+            
         }
 
         try{
@@ -39,10 +39,12 @@ function Mail(){
             }
             setEmails("");
             setMessage("");
+            setLoading(false);
 
         }catch(error){
             console.log(error);
             alert("Something Went Wrong");
+            setLoading(false);
         }
         setLoading(false);
 
@@ -94,7 +96,9 @@ function Mail(){
                     <div className="flex justify-center mt-10 md:mt-0">
                         <button type="submit" className="w-[250px] h-[40px] md:w-[150px] md:h-[35px] bg-white font-bold rounded-md hover:scale-110 transition-all duration-500 active:bg-gray-800" >SEND</button>
                     </div>
-                    <ToastContainer />
+                    <div className="z-50">
+                        <ToastContainer />
+                    </div>
                 </form>    
             </div>
             {loading && (

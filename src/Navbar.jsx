@@ -15,7 +15,7 @@ function Navbar(){
                 </Link>
 
                 <Link to="/">
-                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Contact</p>
+                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Pricing</p>
                 </Link>
                 
             </ul>
