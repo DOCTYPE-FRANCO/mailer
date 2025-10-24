@@ -75,7 +75,7 @@ function Mail(){
                             type="text"
                             className="border-2 border-white w-[300px] h-[30px] font-thin text-white rounded-md pl-3 text-sm"
                             placeholder="MAIL SUBJECT"
-                            value={emails}
+                            value={subject}
                             onChange={(e) => setEmails(e.target.value)}
                         />
                     </label>
