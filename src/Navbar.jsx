@@ -10,7 +10,7 @@ function Navbar(){
                 </Link>
 
                 <Link to="/">
-                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Documentaion</p>
+                    <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Documentation</p>
                 </Link>
 
                 <Link to="/">
@@ -18,6 +18,8 @@ function Navbar(){
                 </Link>
                 
             </ul>
+
+            <p className="">Sign Up</p>
         </div>
     );
 }
