@@ -7,6 +7,7 @@ import axios from "axios";
 function Mail(){
     const [emails, setEmails] = useState("");
     const [message,setMessage] = useState("")
+    const [subject,setSubject] = useState("")
     const [loading, setLoading] = useState(false);
 
     function success(){
@@ -28,7 +29,7 @@ function Mail(){
         try{
             const response = await axios.post("http://localhost:8080/api/email/send", {
                 to: emailArray,
-                subject: "Mailer Test",
+                subject: subject,
                 body: message
             })
             console.log(response.data);
@@ -61,8 +62,19 @@ function Mail(){
                         MAILS:
                         <input 
                             type="text"
-                            className="border-2 border-white w-[300px] h-[100px] font-thin text-white rounded-md pl-3 text-sm"
+                            className="border-2 border-white w-[300px] h-20 font-thin text-white rounded-md pl-3 text-sm"
                             placeholder="Paste Emails here"
+                            value={emails}
+                            onChange={(e) => setEmails(e.target.value)}
+                        />
+                    </label>
+
+                    <label className="flex flex-col md:flex-row text-2xl justify-center md:items-center gap-2 md:gap-5 mx-auto text-white font-bold ">
+                        SUBJECT:
+                        <input 
+                            type="text"
+                            className="border-2 border-white w-[300px] h-[30px] font-thin text-white rounded-md pl-3 text-sm"
+                            placeholder="MAIL SUBJECT"
                             value={emails}
                             onChange={(e) => setEmails(e.target.value)}
                         />
@@ -72,7 +84,7 @@ function Mail(){
                         MESSAGE:
                         <input 
                             type="text"
-                            className="border-2 border-white w-[300px] h-[100px] font-thin text-white rounded-md pl-3"
+                            className="border-2 border-white w-[300px] h-[70px] font-thin text-white rounded-md pl-3"
                             placeholder="Write message here"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
