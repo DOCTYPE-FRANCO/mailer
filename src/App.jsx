@@ -1,6 +1,7 @@
 import React from "react"
 import Home from "./Home"
 import Mail from "./Mail"
+import Pricing from "./Pricing"
 import Header from "./Header"
 import { Routes, Route } from "react-router-dom"
 
@@ -27,6 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/mail" element={<Mail/>}/>
+            <Route path="/pricing" element={<Pricing/>}/>
           </Routes>
         </div>
       </div>
