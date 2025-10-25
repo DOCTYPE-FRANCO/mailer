@@ -13,7 +13,7 @@ function Home(){
             
 
             <Link to="/mail">
-                <p className="bg-blue-950 text-white font-bold hover:scale-110 hover:cursor-pointer p-3 px-8 md:px-6 rounded-md transition-all duration-300">Get Started</p>
+                <p className="bg-blue-950 text-white font-bold hover:scale-110 hover:cursor-pointer p-3 px-16 md:px-12 rounded-md transition-all duration-300 z-20">Get Started</p>
             </Link>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10">
