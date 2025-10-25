@@ -14,7 +14,7 @@ function Pricing() {
 
             <div className="flex md:flex-row flex-col justify-center items-center gap-10 pl-3 mt-10 ">
                 <div className="flex flex-col gap-3 pt-4 items-center w-[250px] h-[320px] bg-white z-10 shadow-2xl shadow-gray-700 rounded-md ">
-                    <Leaf color="#00FF00" />
+                    <Leaf color="#00FF00" size={40} />
                     <p className="font-bold">Free</p>
                     <p className="text-2xl font-bold ">$0<span className="text-xs ml-1"> 7 days trial</span></p>
                     <p className="font-thin">Send up to 10 mails daily</p>
@@ -45,7 +45,7 @@ function Pricing() {
                 </div>
 
                 <div className="flex flex-col gap-3 pt-4 items-center w-[250px] h-[320px] bg-white z-10 shadow-2xl shadow-gray-700 rounded-md ">
-                    <RocketIcon color="#0000FF" />
+                    <RocketIcon color="#0000FF" size={40} />
                     <p className="font-bold">Basic</p>
                     <p className="text-2xl font-bold ">$12<span className="text-xs ml-1">/ month</span></p>
                     <p className="font-thin">Send up to 1000 mails daily</p>
@@ -76,7 +76,7 @@ function Pricing() {
                 </div>
 
                 <div className="flex flex-col gap-3 pt-4 items-center w-[250px] h-[320px] bg-white z-10 shadow-2xl shadow-gray-700 rounded-md ">
-                    <BadgeDollarSign color="#800080" />
+                    <BadgeDollarSign color="#800080" size={40} />
                     <p className="font-bold">Pro</p>
                     <p className="text-2xl font-bold ">$22<span className="text-xs ml-1">/month</span></p>
                     <p className="font-thin">Unlimited mails</p>
