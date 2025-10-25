@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SendIcon, ChartArea, Calendar, Edit, Lightbulb } from "lucide-react";
+import { SendIcon, ChartArea, Calendar, HelpCircle,  Edit, Lightbulb } from "lucide-react";
 import CountUp from "react-countup";
 
 function Home(){
