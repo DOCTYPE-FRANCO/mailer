@@ -16,7 +16,7 @@ function Home(){
                 <p className="bg-blue-950 text-white font-bold hover:scale-110 hover:cursor-pointer p-3 px-8 md:px-6 rounded-md transition-all duration-300">Get Started</p>
             </Link>
 
-            <div className="grid grid-cols-3 gap-10 pb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10">
                 <div className="flex flex-col gap-3 justify-center items-center w-[270px] h-[200px] bg-white z-20 rounded-2xl shadow-2xl">
                     <ChartArea color="#001F3F"  size={50}/>
                     <p className="font-bold text-blue-950">Analytic Report Dashboard</p>
