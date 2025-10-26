@@ -9,10 +9,11 @@ function Documentation(){
                 <p className="text-3xl font-bold">Sending Mails</p>
 
                 <ol className="flex flex-col gap-4 mt-10">
-                    <li>1. Paste mails Addresses in the Alloted spaces</li>
+                    <li>1. Paste Mail Addresses in the Alloted spaces</li>
                     <li>2. Separate the Addresses with comma's or spaces</li>
                     <li>3. Add the Subject of the Mail</li>
                     <li>4. Lastly draft your Message</li>
+                    <li>5. Click Send</li>
                 </ol>
             </div>
         </div>
