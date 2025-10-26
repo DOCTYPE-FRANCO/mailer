@@ -3,6 +3,7 @@ import Home from "./Home"
 import Mail from "./Mail"
 import Pricing from "./Pricing"
 import Header from "./Header"
+import Documentation from "./Documentation"
 import { Routes, Route } from "react-router-dom"
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/mail" element={<Mail/>}/>
             <Route path="/pricing" element={<Pricing/>}/>
+            <Route path="/documentation" element={<Documentation/>}/>
           </Routes>
         </div>
       </div>
