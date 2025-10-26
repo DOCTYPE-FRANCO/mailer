@@ -10,7 +10,7 @@ function Navbar(){
                     <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Home</p>
                 </Link>
 
-                <Link to="/">
+                <Link to="/documentation">
                     <p className="font-bold hover:scale-105 transition-all duration-300 active:text-gray-800">Documentation</p>
                 </Link>
 
