@@ -59,7 +59,7 @@ function Mail(){
             </div>
 
             <div className="flex flex-col gap-7 mx-auto w-[350px] h-[700px] md:w-[650px] md:h-[800px] border-2 border-white rounded-md">
-                <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full pt-20 md:pt-0">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full pt-20 md:pt-6 md:pl-4">
                     
                     <label className="flex flex-col md:flex-row text-2xl gap-2 md:gap-5  text-white font-bold ">
                         SUBJECT:
@@ -72,11 +72,11 @@ function Mail(){
                         />
                     </label>
 
-                    <label className="flex flex-col md:flex-row text-2xl justify-center md:items-center gap-2 md:gap-10 mx-auto text-white font-bold ">
+                    <label className="flex flex-col md:flex-col text-2xl gap-2 text-white font-bold ">
                         MAILS:
                         <input 
                             type="text"
-                            className="border-2 border-white w-[300px] h-20 font-thin text-white rounded-md pl-3 text-sm"
+                            className="border-2 border-white w-[300px] h-20 md:w-[600px] md:h-[500px] font-thin text-white rounded-md pl-3 text-sm"
                             placeholder="Paste Emails here"
                             value={emails}
                             onChange={(e) => setEmails(e.target.value)}
