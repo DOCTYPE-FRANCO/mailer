@@ -52,20 +52,20 @@ function Mail(){
 
     
     return(
-        <div className="flex flex-col gap-3 mx-auto w-[400px] h-[800px] md:w-[750px] md:h-[800px] bg-blue-950/80 rounded-md z-20 relative">
+        <div className="flex flex-col gap-3 mx-auto w-[400px] h-[800px] md:w-[750px] md:h-[850px] bg-blue-950/80 rounded-md z-20 relative mb-20">
             <div className="flex flex-row justify-center w-full gap-4 items-center pt-3">
                 <SendIcon color="#FFFFFF"/>
                 <p className="text-2xl text-white font-bold">MAILER</p>
             </div>
 
-            <div className="flex flex-col gap-7 mx-auto w-[350px] h-[700px] md:w-[650px] md:h-[800px] border-2 border-white rounded-md">
-                <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full pt-20 md:pt-6 md:pl-4">
+            <div className="flex flex-col gap-7 mx-auto w-[350px] h-[700px] md:w-[650px] md:h-[780px] border-2 border-white rounded-md">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full pt-20 md:pt-6 md:pl-4 pl-3">
                     
                     <label className="flex flex-col md:flex-row text-2xl gap-2 md:gap-5  text-white font-bold ">
                         SUBJECT:
                         <input 
                             type="text"
-                            className="border-2 border-white w-[300px] h-[30px] font-thin text-white rounded-md pl-3 text-sm"
+                            className="border-2 border-white w-[300px] h-[30px] md:w-[500px] font-thin text-white rounded-md pl-3 text-sm"
                             placeholder="MAIL SUBJECT"
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
@@ -76,7 +76,7 @@ function Mail(){
                         MAILS:
                         <input 
                             type="text"
-                            className="border-2 border-white w-[300px] h-20 md:w-[600px] md:h-[500px] font-thin text-white rounded-md pl-3 text-sm"
+                            className="border-2 border-white w-[320px] h-[100px] md:w-[600px] md:h-[200px] font-bold text-white rounded-md pl-3 text-sm"
                             placeholder="Paste Emails here"
                             value={emails}
                             onChange={(e) => setEmails(e.target.value)}
@@ -85,11 +85,11 @@ function Mail(){
 
                     
 
-                    <label className="flex flex-col md:flex-row text-2xl justify-center md:items-center gap-2 mx-auto text-white font-bold ">
+                    <label className="flex flex-col md:flex-col text-2xl text-white font-bold ">
                         MESSAGE:
                         <input 
                             type="text"
-                            className="border-2 border-white w-[300px] h-[70px] font-thin text-white rounded-md pl-3"
+                            className="border-2 border-white w-[320px] h-[150px] md:w-[600px] md:h-[300px] font-thin text-white rounded-md pl-3"
                             placeholder="Write message here"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
