@@ -9,7 +9,7 @@ function Documentation(){
                 <p className="text-3xl font-bold">Sending Mails</p>
 
                 <ol className="flex flex-col pl-5 md:pl-0 gap-4 mt-10">
-                    <li>1. Add the Subject of the Mail</li>
+                    <li>1. Add the Subject of the Mail.</li>
                     <li>2. Paste Mail Addresses in the Alloted spaces.</li>
                     <li>3. Separate the Addresses with comma's or spaces.</li>
                     <li>4. Lastly draft your Message.</li>
